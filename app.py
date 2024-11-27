@@ -13,7 +13,7 @@ st.set_page_config(
 def load_model():
     try:
         # Open the model file in binary mode and then load it
-        with open('../mental_health/random_forest_model.pkl', 'rb') as file:
+        with open('./random_forest_model.pkl', 'rb') as file:
             model = pickle.load(file)
         return model
     except Exception as e:
